@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Secure Patient Medical Record Portal</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+
+body{
+margin:0;
+font-family:Arial, sans-serif;
+background:#eef2f7;
+}
+
+header{
+background:#0a3d62;
+color:white;
+padding:20px;
+text-align:center;
+}
+
+.container{
+padding:20px;
+}
+
+.card{
+background:white;
+padding:20px;
+margin-bottom:20px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+h2{
+color:#0a3d62;
+}
+
+.status{
+color:green;
+font-weight:bold;
+}
+
+.timeline{
+border-left:4px solid #0a3d62;
+padding-left:15px;
+}
+
+.timeline-item{
+margin-bottom:15px;
+}
+
+button{
+padding:10px 15px;
+background:#0a3d62;
+color:white;
+border:none;
+border-radius:5px;
+cursor:pointer;
+margin-top:10px;
+}
+
+button:hover{
+background:#07406b;
+}
+
+.footer{
+text-align:center;
+padding:15px;
+background:#0a3d62;
+color:white;
+}
+
+</style>
+</head>
+<body>
+
+<header>
+<h1>Secure Patient Medical Record Portal</h1>
+<p>Patient-Centric | Privacy-Focused | Consent-Based Access</p>
+</header>
+
+<div class="container">
+
+<!-- Patient Dashboard -->
+<div class="card">
+<h2>Patient Dashboard</h2>
+<p><strong>Patient Name:</strong> Sharana</p>
+<p><strong>Data Encryption Status:</strong> <span class="status">Encrypted (ZKP Enabled)</span></p>
+<p><strong>Access Permissions:</strong> Doctor - Approved | Lab - Restricted</p>
+<p><strong>Consent Status:</strong> Active</p>
+</div>
+
+<!-- Medical History Timeline -->
+<div class="card">
+<h2>Chronological Medical History</h2>
+<div class="timeline">
+<div class="timeline-item">
+<strong>2024:</strong> General Health Checkup
+</div>
+<div class="timeline-item">
+<strong>2025:</strong> Blood Test Report (JSON format integrated)
+</div>
+<div class="timeline-item">
+<strong>2026:</strong> MRI Scan Report (Unified View Generated)
+</div>
+</div>
+</div>
+
+<!-- Data Format Awareness -->
+<div class="card">
+<h2>Unified Data View</h2>
+<p>Medical records may originate from:</p>
+<ul>
+<li>JSON Format</li>
+<li>XML Format</li>
+<li>CSV Format</li>
+</ul>
+<p>System internally converts all records into a unified secure view.</p>
+</div>
+
+<!-- Emergency Access -->
+<div class="card">
+<h2>Emergency Access Feature</h2>
+<p>Activate temporary emergency access (Time-bound & Patient Triggered)</p>
+<button onclick="activateEmergency()">Activate Emergency Access</button>
+<p id="emergencyStatus"></p>
+</div>
+
+</div>
+
+<div class="footer">
+© 2026 Secure Patient Portal | Designed for VTU Internship Project
+</div>
+
+<script>
+function activateEmergency(){
+document.getElementById("emergencyStatus").innerHTML =
+"Emergency Access Activated for 30 Minutes (Biometric Confirmation Simulated)";
+}
+</script>
+
+</body>
+</html>
